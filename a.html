@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Hỗ trợ Lưu trữ web</title>
+<script>
+function fcheckSupport() {
+  if(('sessionStorage' in window) && window['sessionStorage'] !==null) {
+    alert('Trình duyệt của bạn hỗ trợ Lưu trữ web');
+    return;
+  }
+  alert('Trình duyệt của bạn không hỗ trợ Lưu trữ web');
+}
+</script>
+</head>
+<body onload='fcheckSupport();'>
+</body>
+</html>
